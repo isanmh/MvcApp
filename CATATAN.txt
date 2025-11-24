@@ -28,9 +28,22 @@ Extensi VS Code :
 - Prettier - Code formatter
 - vscode-icons
 
+Buat Project ASP.NET Core di VS Code:
+dotnet new mvc -o NamaProject
+code -r NamaProject
+
 Jalankan Project ASP.NET Core di VS Code:
 - dotnet dev-certs https --trust
 
 Jalankan Project :
 - dotnet run
 - dotnet watch run
+
+#### Cara Setting Prettier ####
+- ctrt + ,  => search prettier => centang "format on save"
+- pilih file => preference => setting => search "default formatter" => pilih "Prettier - Code formatter"
+
+- setiap bahasa baru klik kanan pada file => pilih "Format Document" => "Configure Default Formatter..." => pilih "Prettier - Code formatter", pilih bahasa
+
+
+### Routing ###

@@ -95,3 +95,4 @@ C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\refint\MvcApp.dl
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.pdb
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.genruntimeconfig.cache
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\ref\MvcApp.dll
+C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.sourcelink.json

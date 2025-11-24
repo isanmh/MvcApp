@@ -25,5 +25,18 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+// Custom Routeing
+app.MapGet("/hello", () => "Hello World!");
+app.MapGet("/hai", () => "Hai dunia!");
+
+// ...:5000/welcome/welcome?name=YourName&job=YourJob
+app.MapGet("/welcome", async context =>
+{
+    var name = context.Request.Query["name"];
+    var job = context.Request.Query["job"];
+    var res = $"Welcome {name}, your job is {job}";
+    await context.Response.WriteAsJsonAsync(res);
+});
+
 
 app.Run();
