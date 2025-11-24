@@ -1,0 +1,36 @@
+Cara install ASP.NET Core di Windows:
+- SDK dan Runtime: 10.0.0 atau lebih baru
+- visual studio 2022 atau lebih baru
+- Visual Studio Code (opsional)
+- Sql Server (opsional)
+
+Extensi VS Code : 
+- Auto-Using for C#
+- C# Dev Kit
+- C#
+- C# Extensi
+- .NET Core Snippet Pack
+- .Net Core Tools
+- ASP.NET Core Snippets
+- ASP.NET Core Switcher
+- ASP.NET Helper
+- Auto Close Tag
+- Auto Rename Tag
+- Auto Import
+- Auto Rename Tag
+- C# Namespace Autocompletin
+- CodeSnap
+- Color Highlight
+- IntelliSense for CSS class names in HTML (Zignd)
+- Nuget Gallery
+- Nuget Package Manager
+- Path Intellisense
+- Prettier - Code formatter
+- vscode-icons
+
+Jalankan Project ASP.NET Core di VS Code:
+- dotnet dev-certs https --trust
+
+Jalankan Project :
+- dotnet run
+- dotnet watch run
