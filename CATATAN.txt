@@ -47,3 +47,9 @@ Jalankan Project :
 
 
 ### Routing ###
+MapGet, MapPost, MapPut, MapDelete, MapControllerRoute
+
+### Controller ###
+klik kanan pada folder Controllers => C# new => Controller
+
+### View ###

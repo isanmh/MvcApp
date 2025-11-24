@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MvcApp.Controllers
 {
-    [Route("Salam")]
     public class SalamController : Controller
     {
+        [Route("Salam")]
         public string Index()
         {
             return "Ini Controller salam!";
@@ -16,6 +16,11 @@ namespace MvcApp.Controllers
         public string Welcome(string name, string job)
         {
             return HtmlEncoder.Default.Encode($"Hello, nama saya {name} & job {job}");
+        }
+
+        public IActionResult About()
+        {
+            return View();
         }
 
     }
