@@ -97,3 +97,4 @@ C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.genruntim
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\ref\MvcApp.dll
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.sourcelink.json
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\th9b4q7qaq-{0}-o242ld2vjv-o242ld2vjv.gz
+C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\kcf7zt3yh3-{0}-j1fvhzwtjf-j1fvhzwtjf.gz
