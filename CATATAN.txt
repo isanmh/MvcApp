@@ -63,3 +63,20 @@ app.MapGet("/", () => "Hello World!");
 klik kanan pada folder Controllers => C# new => Controller
 
 ### View ###
+Ragor page 
+kilk kanan pada folder Views => c# new => Razor Page  => beri nama sesuai controller
+
+
+### Model ###
+- buat Model di folder Models
+- install dependency Entity Framework Core :
+Gunakan Nuget Gallery :
+
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+- dotnet add package Microsoft.EntityFrameworkCore.Tools
+- dotnet add package Microsoft.EntityFrameworkCore.Design
+
+CLI commands: 
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
