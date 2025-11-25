@@ -5,12 +5,13 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<div class="card">
-    <img src="" alt="">
+<div class="card col-md-4">
+    <img src="~/images/profile.svg" alt="">
     <div class="card-body">
-        <h5 class="card-body">@ViewData["Nama"]</h5>
+        <h5 class="card-title">@ViewData["nama"]</h5>
         <p class="card-text">
-            @ViewData["Title"]
+            @ViewData["divisi"]
         </p>
+        <small>@ViewData["divisi"] - @ViewData["role"]</small>
     </div>
 </div>

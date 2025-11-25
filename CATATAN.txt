@@ -27,6 +27,10 @@ Extensi VS Code :
 - Path Intellisense
 - Prettier - Code formatter
 - vscode-icons
+- Svg Preview
+
+Documentasi ASP.NET Core MVC:
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-10.0&tabs=visual-studio
 
 Buat Project ASP.NET Core di VS Code:
 dotnet new mvc -o NamaProject
@@ -48,6 +52,12 @@ Jalankan Project :
 
 ### Routing ###
 MapGet, MapPost, MapPut, MapDelete, MapControllerRoute
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapGet("/", () => "Hello World!");
 
 ### Controller ###
 klik kanan pada folder Controllers => C# new => Controller

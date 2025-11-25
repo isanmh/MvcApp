@@ -20,6 +20,10 @@ namespace MvcApp.Controllers
 
         public IActionResult About()
         {
+            ViewData["nama"] = "Ihsan Miftahul Huda";
+            ViewData["divisi"] = "Education & Training";
+            ViewData["role"] = "Trainer";
+
             return View();
         }
 
