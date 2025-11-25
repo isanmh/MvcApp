@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Loop";
+    ViewData["Jumlah"] = 5;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <ul>
+        @* contoh looping data *@
+        @for (int i = 0; i < (int)ViewData["jml"]!; i++)
+        {
+            <li>@ViewData["pesan"]</li>
+        }
+    </ul>
+</div>

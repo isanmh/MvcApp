@@ -26,6 +26,12 @@ namespace MvcApp.Controllers
 
             return View();
         }
+        public IActionResult Loop(string name = "isan", int n = 5)
+        {
+            ViewData["jml"] = n;
+            ViewData["pesan"] = "Selamat Pagi, " + name;
+            return View();
+        }
 
     }
 }
