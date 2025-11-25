@@ -21,7 +21,6 @@ C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\rjsmcshtml.dswa.
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\scopedcss\bundle\MvcApp.styles.css
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\scopedcss\projectbundle\MvcApp.bundle.scp.css
-C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\l1rdbf12dl-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\l187bkidoe-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\tdfhvfmkuh-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\t4pvvr5gk8-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -98,3 +97,4 @@ C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\ref\MvcApp.dll
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\MvcApp.sourcelink.json
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\th9b4q7qaq-{0}-o242ld2vjv-o242ld2vjv.gz
 C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\kcf7zt3yh3-{0}-j1fvhzwtjf-j1fvhzwtjf.gz
+C:\Users\inixindo\Desktop\Training ASP\MvcApp\obj\Debug\net10.0\compressed\l1rdbf12dl-{0}-wrgxli05m9-wrgxli05m9.gz
