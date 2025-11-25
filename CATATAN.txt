@@ -107,5 +107,22 @@ Eksekusi tools :
 - masukan ke database :  
     dotnet ef database update
 
+###  alur ###
+M - V - C
+
+ORM EF :
+_db.Tolist() => ambil semua data
+_db.Find(id) => ambil data berdasarkan id
+_db.Add() => menambah data
+_db.Update() => mengubah data
+_db.Remove() => menghapus data
+_db.SaveChanges() => menyimpan perubahan ke database
+
+versi asyncronous :
+await _db.TolistAsync()
+await _db.FindAsync(id)
+await _db.SaveChangesAsync()
+await _db.AddAsync()
+
 
 
