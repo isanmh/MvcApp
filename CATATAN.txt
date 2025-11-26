@@ -148,4 +148,24 @@ await _db.AddAsync()
 - di view tampilkan error validasi dengan tag helper asp-validation-for
 - di view tambahkan tag helper asp-antiforgery="true" pada form untuk mencegah serangan CSRF (Cross-Site Request Forgery)
 
+### Scaffolding CRUD ###
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-10.0&tabs=visual-studio-code#scaffold-movie-pages
 
+DI / package manager console :
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet tool uninstall --global dotnet-aspnet-codegenerator
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+Langkah2 : 
+- buat Model Movie: 
+- Movie.cs
+- dbcontext : AppDbContext.cs
+- jalankan migrasi :
+dotnet ef migrations remove --context AppDbContext
+dotnet ef migrations add InitialCreate --context AppDbContext
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update --context AppDbContext
+
+Code Generator :
+dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc AppDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries 
