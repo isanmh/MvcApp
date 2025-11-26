@@ -62,5 +62,41 @@ namespace MvcApp.Controllers
             return View(employee);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int id,
+            [Bind("Id,Name,Division,Role")] Employee employee
+            )
+        {
+            // logika pengecekan id
+            if (id != employee.Id)
+            {
+                return NotFound();
+            }
+
+            // cek validasi jika tidak valid
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _db.Update(employee);
+                    await _db.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (employee.Id == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(employee);
+        }
+
     }
 }
