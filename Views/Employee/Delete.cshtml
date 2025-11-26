@@ -1,0 +1,15 @@
+@model MvcApp.Models.Employee;
+<div class="alert alert-warning" role="alert">
+    <h5>apakah anda yakin ingin menghapus data?</h5>
+    <hr>
+    <div class="col">
+        @Html.DisplayNameFor(model => model.Name) :
+        @Html.DisplayFor(model => model.Name)
+    </div>
+    @* tombol konfirmasi hapus *@
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Hapus</button>
+        <a asp-action="Index" class="btn btn-secondary">Batal</a>
+    </form>
+</div>

@@ -98,5 +98,25 @@ namespace MvcApp.Controllers
             return View(employee);
         }
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            // jika id kosong
+            if (_db.Employees == null)
+            {
+                return Problem("Data yg ingin dihapus tidak ditemukan. db context kosong.");
+            }
+            // logika jika adaid
+            var employee = await _db.Employees.FindAsync(id);
+            if (employee != null)
+            {
+                _db.Employees.Remove(employee);
+            }
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
