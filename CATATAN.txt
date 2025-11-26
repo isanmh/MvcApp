@@ -29,6 +29,9 @@ Extensi VS Code :
 - vscode-icons
 - Svg Preview
 
+Ektensi AI :
+- Qodo: the AI Code Review Platform
+
 Documentasi ASP.NET Core MVC:
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-10.0&tabs=visual-studio
 
@@ -103,17 +106,30 @@ Eksekusi tools :
     dotnet tool update -g dotnet-ef
 
 - Migrasi :
+    php artisan make:migration create_nama_table --create=nama_table
+
     dotnet ef migrations add InitialCreate
+
+    php artisan migrate:fresh --seed
 - masukan ke database :  
     dotnet ef database update
+
+    php artisan migrate
 
 ###  alur ###
 M - V - C
 
 ORM EF :
 _db.Tolist() => ambil semua data
+SELECT * FROM Table
+?input=backdor
+
 _db.Find(id) => ambil data berdasarkan id
+SELECT * FROM Table WHERE Id = id
+
 _db.Add() => menambah data
+INSERT INTO Table (kolom1, kolom2) VALUES (nilai1, nilai2)
+
 _db.Update() => mengubah data
 _db.Remove() => menghapus data
 _db.SaveChanges() => menyimpan perubahan ke database
@@ -124,5 +140,12 @@ await _db.FindAsync(id)
 await _db.SaveChangesAsync()
 await _db.AddAsync()
 
+
+### cara validasi ###
+- [ValidateAntiForgeryToken] di controller
+- gunakan data annotation di model
+- di controller cek validasi dengan ModelState.IsValid
+- di view tampilkan error validasi dengan tag helper asp-validation-for
+- di view tambahkan tag helper asp-antiforgery="true" pada form untuk mencegah serangan CSRF (Cross-Site Request Forgery)
 
 

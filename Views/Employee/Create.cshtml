@@ -1,0 +1,32 @@
+@* model ini dibutuhkan untuk asp-for (value name) *@
+@model MvcApp.Models.Employee
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h4>@ViewData["Title"]</h4>
+<a asp-controller="Employee" asp-action="Index" class="btn btn-outline-primary">
+    Back to List
+</a>
+
+<div class="col-md-6 mt-3">
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" asp-for="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Division" class="form-label">Division</label>
+            <input type="text" class="form-control" asp-for="Division">
+            <span asp-validation-for="Division" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Role" class="form-label">Role</label>
+            <input type="text" class="form-control" asp-for="Role">
+            <span asp-validation-for="Role" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

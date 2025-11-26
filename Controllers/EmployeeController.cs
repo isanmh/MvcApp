@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MvcApp.Models;
 namespace MvcApp.Controllers
 {
@@ -12,11 +13,35 @@ namespace MvcApp.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             // tenary if (condition ? true : false)
-            return _db.Employees != null ? View(_db.Employees.ToList()) :
+            return _db.Employees != null ?
+                    View(await _db.Employees.ToListAsync()) :
                     Problem("Data tidak ditemukan.");
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Employee/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(
+            [Bind("Name,Division,Role")] Employee employee
+            )
+        {
+            // cek validasi jika tidak valid
+            if (ModelState.IsValid)
+            {
+                _db.Add(employee);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(employee);
+        }
+
     }
 }
