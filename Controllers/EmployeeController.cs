@@ -43,5 +43,24 @@ namespace MvcApp.Controllers
             return View(employee);
         }
 
+        // edit
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            // logika pengecekan id & Model Database
+            if (id == null || _db.Employees == null)
+            {
+                return NotFound();
+            }
+
+            // Jika ada
+            var employee = await _db.Employees.FindAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
     }
 }

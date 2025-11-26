@@ -12,7 +12,7 @@ namespace MvcApp.Models
         public string? Name { get; set; }
 
         [Required]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
         public string? Division { get; set; }
 
         [Required]
