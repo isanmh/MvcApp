@@ -106,7 +106,7 @@ namespace MvcApp.Controllers
             // jika id kosong
             if (_db.Employees == null)
             {
-                return Problem("Data yg ingin dihapus tidak ditemukan. db context kosong.");
+                return Problem("Data db context kosong.");
             }
             // logika jika adaid
             var employee = await _db.Employees.FindAsync(id);
